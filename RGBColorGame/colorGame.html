@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Color Game</title>
+    <link rel="stylesheet" type="text/css" href="colorGame.css" />
+    <script src="./howler/dist/howler.min.js"></script>
+    <!--https://stackoverflow.com/questions/9419263/playing-audio-with-javascript-->
+    <!--https://howlerjs.com/-->
+    <!--https://stackoverflow.com/questions/950087/how-do-i-include-a-javascript-file-in-another-javascript-file-->
+    
+</head>
+<body>
+    <h1 class="mainHeading">The Great 
+        <br />
+        <span id="colorDisplay">RGB</span> 
+        <br />
+        Color Game</h1>
+    <div id="stripe">
+        <button id="reset">New Colors</button>
+        <span id="message"></span>
+        <button class="mode">Easy</button>
+        <button class="mode selected">Hard</button>
+    </div>
+    <div id="container" class="clearfix">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+
+
+    <h1>RGB Reference</h1>
+    <img src="/images/RGB.png" alt="RGB.png" height="220" width="220">
+    <script src="colorGame.js"></script>
+</body>
+</html>
