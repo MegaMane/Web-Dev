@@ -1,0 +1,164 @@
+
+
+body {
+    margin: 0px;
+    background-color: black;
+    font-family: Roboto,sans-serif;
+    box-sizing: border-box;
+
+}
+
+
+.palette {
+    color: rgb(249, 65, 68) /*#F94144*/;
+    color: rgb(243, 114, 44) /*#F3722C*/;
+    color: rgb(248, 150, 30) /*#F8961E*/;
+    color: rgb(249, 199, 79) /*#F9C74F*/;
+    color: rgb(144, 190, 109) /*#90BE6D*/;
+    color: rgb(67, 170, 139) /*#43AA8B*/;
+    color: rgb(87, 117, 144) /*#577590*/;
+}
+
+.shelf {
+    display: flex;
+    background-color: rgb(87, 117, 144);
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+    align-items: flex-start;
+}
+
+p {
+    font-weight: bold;
+}
+.gameCard {
+    background-color: #f8f8ff;
+    color: white;
+    min-height: 200px;
+    width: 25%;
+    padding: 20px 15px;
+    margin: 10px;
+    border-radius: 25px;
+    border: thin solid #333;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+
+.gameCard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+
+.cardFrame {
+    background-color: rgb(248, 150, 30);
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+
+.gameTitle {
+    display: inline-block;
+    font-family: Goldman;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+.coverArt {
+    background-color: white;
+    padding: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.coverArt:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+
+
+.coverArt img {
+    width: 100%;
+    height: auto;
+    transition: transform .5s ease;
+}
+
+.coverArt img:hover {
+    transform: scale(1.1); 
+}
+
+.starRating {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    background-color: #f8f8ff;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 3px;
+}
+
+.starRating p {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.synopsis {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    margin-bottom: 15px;
+}
+
+
+.starRating .checked {
+    color: orange;
+}
+
+.starRating .fa-heart.checked {
+    color: red;
+}
+
+.metaScore {
+    background-color: #6c3;
+    color: #fff;
+    cursor: Pointer;
+    border-radius: 6px;
+    line-height: 2em;
+    width: 2em;
+    height: 2em;
+    font-weight: bold;
+    font-style: normal;
+    font-family: Arial,sans-serif;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 3px;
+    
+}
+
+.metaScore a {
+    text-decoration: none;
+}
+
+.metaScore a:active, .metaScore a:visited, .metaScore a:hover {
+    color: #fff; 
+}
+
+
+#videosList {
+    max-width: 600px; 
+     overflow: hidden;
+   }
+
+
+   .video {
+     height: 330px;
+     width: 600px;
+     margin-bottom: 50px;
+   }
+   
+   /* Hide Play button + controls on iOS */
+   video::-webkit-media-controls {
+       display:none !important;
+   }
