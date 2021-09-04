@@ -16,10 +16,10 @@ with open('personal.json', 'w') as json_file:
 
 """
 
-response = requests.get("http://api.thegamesdb.net/v1/Games/ByPlatformID?apikey=a94068d9ef3e220c798a35644136368664b13ded607779d7f48050da7bc504c1&id=7&fields=players,publishers,genres,overview,last_updated,rating,platform,coop,youtube,os,processor,ram,hdd,video,sound,alternates&page=2")
+response = requests.get("http://api.thegamesdb.net/v1/Platforms?apikey=a94068d9ef3e220c798a35644136368664b13ded607779d7f48050da7bc504c1&fields=icon,console,controller,developer,manufacturer,media,cpu,memory,graphics,sound,maxcontrollers,display,overview")
 data = response.json()
 print(data.keys())
 print(data['data']['count'])
 
-with open('E:/Users/Jon/Code/GameDBProject/GamesDBJson/personal.json', 'w') as json_file:
+with open(r'\\MSPIGGY\PiggyShare\import\Platforms.json', 'w') as json_file:
     json.dump(data, json_file)
